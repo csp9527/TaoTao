@@ -6,7 +6,6 @@ import redis.clients.jedis.JedisPool;
 
 public class JedisTest {
 
-    @Test
     public void testJedisSingle() {
         // 创建一个Jedis对象
         Jedis jedis = new Jedis("192.168.203.134", 6379);
@@ -19,7 +18,6 @@ public class JedisTest {
         jedis.close();
     }
 
-    @Test
     public void testJedisPool() {
         // 创建一个连接池对象
         JedisPool jedisPool = new JedisPool("192.168.203.134", 6379);

@@ -18,7 +18,7 @@
         <constructor-arg name="host" value="192.168.203.134"/>
         <constructor-arg name="port" value="6379"/>
     </bean>
-    <bean id="jedisClientPool" class="com.taotao.content.jedis.JedisClientPool"/>
+    <bean id="jedisClientPool" class="com.taotao.jedis.JedisClientPool"/>
 
 
     <!-- 集群版，注意：单机版和集群版不能共存！！！ -->
